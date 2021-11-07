@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="icons/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-reboot.min.css"> -->
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Pulse</title>
 </head>
 <body>
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -55,7 +56,7 @@
             </div>
             
         </div>
-    </div>
+    </section>
 
     <section class="benefits">
         <div class="container">
@@ -89,7 +90,7 @@
         </div>
     </section>
 
-    <div class="consultation">
+    <section class="consultation">
         <div class="container">
             <h2 class="title title_left">
                 Получите бесплатную консультацию <br> по подбору пульсометра 
@@ -99,13 +100,28 @@
             </div>
             <form class="feed-form" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text"> <!-- required -обязательность заполнения -->
-                <input name="phone" required placeholder="Ваш телефон" type="tel"><!-- атрибут name для определения данных -->
+                <input name="phone" required placeholder="Ваш телефон" type="phone"><!-- атрибут name для определения данных -->
                 <input name="email" required placeholder="Ваш e-mail" type="email">
                 <!-- <input type="submit" value="заказать кОНСУЛЬТАЦИЮ"> <!-- можно так отправлять данные -->
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button> <!--можно и лучше через тег btn  -->
             </form>
         </div>
-    </div>
+    </section>
+
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div><img src="img/catalog/polar-running.jpg" alt="RUNNING"></div>
+                <div><img src="img/catalog/polar-fitness.jpg" alt="fitness"></div>
+                <div><img src="img/catalog/polar-triatlon.jpg" alt="triatlon"></div>
+              </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
     
 </body>
 </html>
