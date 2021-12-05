@@ -1,0 +1,82 @@
+.benefits {
+    min-height: 470px;
+    background-color: #F6F6F6;
+    padding: 65px 0 73px 0;
+    color: rgb(13, 13, 13);
+    &__header{
+        font-size: 30px;
+        line-height: 1.2;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__wraper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__icons{
+        margin-top: 58px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon{
+        display: block;
+        width: 32%;
+    }
+    &__img{
+        display: block;
+        width: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        &_animated {
+            animation: heartbeat 1s ease infinite;
+            //animation-name: heartbeat;
+            //animation-duration: 1s;
+            //animation-timing-function: ease;
+            //animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+    &__subheader{
+        margin-top: 24px;
+        font-size: 18px;
+        line-height: 1.2;
+        text-align: center;
+        font-weight: 700;
+    }
+    &__descr {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: center;
+        font-weight: 300;
+        a {
+            color:$main-color;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
+@media (max-width: 575px) {
+    .benefits {
+        padding: 25px 0 50px 0;
+        &__header {
+            font-size: 24px;
+        }
+        &__icons {
+            flex-wrap: wrap;
+            margin-top: 6px;
+        }
+        &__icon {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.title {
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 700;
+    &_left {
+        color:rgb(255, 255, 255);
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 24px;
+    }    
+}
+
+@media (max-width: 575px) {
+    .title {
+        font-size: 16px;
+        br {
+            display: none;
+        }
+    }    
+}
